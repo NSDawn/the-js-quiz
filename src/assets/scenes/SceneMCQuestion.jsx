@@ -1,14 +1,17 @@
 import MCButton from "../components/MCButton"
+import CodeBlock from "../components/CodeBlock";
 
 function SceneMCQuestion() {
     return (
         <>
-            <pre><code className="language-css">
-                let x = 0;
-            </code></pre>
+            <CodeBlock lang="js" >
+                {
+                    "let i = 0; i ++; class yeet{}"
+                }
+            </CodeBlock>
             
 
-            <div class="mcq-options">
+            <div className="mcq-options">
                 <MCButton /> <MCButton/>
                 <br />
                 <MCButton /> <MCButton />
