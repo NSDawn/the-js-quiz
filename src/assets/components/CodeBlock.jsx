@@ -10,7 +10,7 @@ function CodeBlock(props) {
         if (typeof window !== "undefined") {
             Prism.highlightAll();
         }
-    }, []);
+    }, [props.children]);
 
     return (
         <>

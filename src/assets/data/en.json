@@ -4,7 +4,7 @@
             "type": "MCQuestion-code",
             "num":"0",
             "prompt": "What is returned by the following function?",
-            "code": "const q0 = () => {\n    return [] + {};\n}",
+            "code": "const q0 = () => {\n    return [] + {};\n};",
             "choices": [
                 "0",
                 "'[object Object]'",
@@ -17,7 +17,7 @@
             "type": "MCQuestion-code",
             "num":"1",
             "prompt": "What about this function?",
-            "code": "const q1 = () => {\n    return +[];\n}",
+            "code": "const q1 = () => {\n    return +[];\n};",
             "choices": [
                 "0",
                 "[]",
@@ -30,7 +30,7 @@
             "type": "MCQuestion-code",
             "num":"2",
             "prompt": "What is returned by the following function?",
-            "code": "const q6 = () => {\n    let k = true;\n    return k++;\n}",
+            "code": "const q6 = () => {\n    let k = true;\n    return k++;\n};",
             "choices": [
                 "true",
                 "1",
