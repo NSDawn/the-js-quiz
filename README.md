@@ -15,4 +15,5 @@ While it doesn't disqualify you from being a good JS developer, this quiz covers
 ## 😈 How is it built? 
 The JS Quiz uses the front-end full-stack JavaScript library framework language known as React, made by Facebook's Meta corporation. This is why it's so blazingly fast 🥵🔥🔥!
 
-## 
+## 📖 License
+Just take it. It's yours. The code is kinda dog💩, and you can't blame me for that.
