@@ -1,6 +1,6 @@
 function RotatingWrapper(props) {
     
-    const theta = props.rotation ?? (Math.floor(Math.random() * 14) -7)
+    const theta = props.rotation ?? (Math.floor(Math.random() * 8) -4)
     
     return (
         <div style={{transform: `rotate(${theta}deg)`}} >

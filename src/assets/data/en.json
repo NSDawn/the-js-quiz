@@ -1,8 +1,8 @@
 {
     "questions": {
-        "1" : {
+        "0" : {
             "type": "MCQuestion-code",
-            "num":"1",
+            "num":"0",
             "prompt": "What is returned by the following function?",
             "code": "const q0 = () => {\n    return [] + {};\n}",
             "choices": [
@@ -12,6 +12,36 @@
                 "{}"
             ],
             "correctchoice": "'[object Object]'"
+        },
+        "1" : {
+            "type": "MCQuestion-code",
+            "num":"1",
+            "prompt": "What about this function?",
+            "code": "const q1 = () => {\n    return +[];\n}",
+            "choices": [
+                "0",
+                "[]",
+                "''",
+                "true"
+            ],
+            "correctchoice": "0"
+        },
+        "2" : {
+            "type": "MCQuestion-code",
+            "num":"2",
+            "prompt": "What is returned by the following function?",
+            "code": "const q6 = () => {\n    let k = true;\n    return k++;\n}",
+            "choices": [
+                "true",
+                "1",
+                "2",
+                "SyntaxError"
+            ],
+            "correctchoice": "0"
         }
+    },
+    "titles": {
+        "the_js_quiz": "The JS Quiz",
+        "lives": "Lives:"
     }
 }

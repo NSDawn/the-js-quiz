@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--rgb-text);
+  background-color: var(--rgb-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,6 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+
+* {
+  --rgb-indicator: #eb4343;
+  --rgb-bg: #242424;
+  --rgb-text: #ffffff;
+
+  --rgb-buttonon: rgb(137, 123, 98);
+  --rgb-buttonoff: #4c4848;
+
+  --rgb-reservedbool: #f6e0b4;
+  --rgb-reservederr:  #f1bbbb;
+  --rgb-reservednum: #d5f5c5;
+  
+}
+
+
 
 @font-face {
   font-family: "Fira Code";
@@ -29,6 +46,17 @@
   src: url("assets/fonts/VictorMono-Italic.ttf");
 }
 
+.reservedErr {
+  color: var(--rgb-reservederr);
+}
+
+.reservedBool {
+  color: var(--rgb-reservedbool);
+}
+
+.reservedNum {
+  color: var(--rgb-reservednum);
+}
 
 a {
   font-weight: 500;
@@ -61,27 +89,18 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  color: inherit;
+  background-color: var(--rgb-buttonoff);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.15s;
 }
 button:hover {
-  border-color: #646cff;
+  transition: ease-in 0.25s;
+  text-shadow: 1px 1px 2px var(--rgb-bg);
+  background-color: var(--rgb-buttonon);
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}

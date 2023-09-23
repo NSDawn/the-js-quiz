@@ -7,16 +7,24 @@ import S from './assets/data/en.json'
 
 function App() {
 
+  const [lives, setLives] = useState(3);
+  const [currQuestion, setCurrQuestion] = useState(2);
+
   return (
     <>
         <header>
           <h1>
-            The JS Quiz
+            {S.titles.the_js_quiz}
           </h1>
         </header>
         <section className="viewport">
-          <SceneMCQuestion Q={S.questions[1]} ></SceneMCQuestion>
+          <SceneMCQuestion Q={S.questions[currQuestion]} ></SceneMCQuestion>
         </section>
+        <footer>
+          <h3>
+            {S.titles.lives} {lives}
+          </h3>
+        </footer>
     </>
   )
 }

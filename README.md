@@ -1,6 +1,6 @@
-# the-js-quiz: **The 🟨JS Quiz**
+# the-js-quiz: **The JS Quiz**
 
-## 😳 Woah... dude! So just what is "The 🟨JS Quiz"? 
+## 😳 Woah... dude! So just what is "The JS Quiz"? 
 The JS Quiz is a rigrous and extremely serious quiz to test one's competence in important and widely used JavaScript concepts and wider knowledge. 
 
 Feel free to use it in these scenarios!
