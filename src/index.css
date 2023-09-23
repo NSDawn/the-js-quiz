@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Victor Mono";
   line-height: 1.5;
   font-weight: 400;
 
@@ -19,6 +19,17 @@
   src: url("assets/fonts/FiraCode.ttf");
 }
 
+@font-face {
+  font-family: "Victor Mono";
+  src: url("assets/fonts/VictorMono.ttf");
+}
+@font-face {
+  font-family: "Victor Mono";
+  font-style: italic;
+  src: url("assets/fonts/VictorMono-Italic.ttf");
+}
+
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -37,6 +48,8 @@ body {
 }
 
 h1 {
+  font-weight: 500;
+  font-style: italic;
   font-size: 3.2em;
   line-height: 1.1;
 }

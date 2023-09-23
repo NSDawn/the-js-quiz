@@ -4,7 +4,7 @@ function MCButton(props) {
 
     return (
         <>
-            <button onClick={props.onclick}> {props.text} </button>
+            <button className="mcq-button"> {props.children} </button>
         </>
     )
 }

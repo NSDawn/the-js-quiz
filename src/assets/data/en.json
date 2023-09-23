@@ -1,0 +1,17 @@
+{
+    "questions": {
+        "1" : {
+            "type": "MCQuestion-code",
+            "num":"1",
+            "prompt": "What is returned by the following function?",
+            "code": "const q0 = () => {\n    return [] + {};\n}",
+            "choices": [
+                "0",
+                "'[object Object]'",
+                "''",
+                "{}"
+            ],
+            "correctchoice": "'[object Object]'"
+        }
+    }
+}

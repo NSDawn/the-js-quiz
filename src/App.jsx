@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import SceneMCQuestion from './assets/scenes/SceneMCQuestion'
+import S from './assets/data/en.json' 
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
           </h1>
         </header>
         <section className="viewport">
-          <SceneMCQuestion></SceneMCQuestion>
+          <SceneMCQuestion Q={S.questions[1]} ></SceneMCQuestion>
         </section>
     </>
   )

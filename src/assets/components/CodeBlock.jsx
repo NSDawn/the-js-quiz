@@ -15,7 +15,7 @@ function CodeBlock(props) {
 
     return (
         <>
-            <pre style={{transform: "rotate(" + tilt + "deg)"}}>
+            <pre>
                 <code className={"language-" + lang }>
                     {props.children}
                 </code>
