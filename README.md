@@ -1,5 +1,7 @@
 # the-js-quiz: **The JS Quiz**
 
+[![In-game Screenshot](assets/img/readme-scsh.png)](nsdawn.dev/the-js-quiz)
+
 ## 😳 Woah... dude! So just what is "The JS Quiz"? 
 The JS Quiz is a rigrous and extremely serious quiz to test one's competence in important and widely used JavaScript concepts and wider knowledge. 
 
