@@ -1,6 +1,12 @@
 # the-js-quiz: **The JS Quiz**
 
-[![In-game Screenshot](./src/assets/img/readme-scsh.png)](https://nsdawn.dev/the-js-quiz)
+<a href="https://nsdawn.dev/the-js-quiz">
+    <img 
+        src="./src/assets/img/readme-scsh.png" 
+        alt="In-game Screenshot"
+        style="width: 50%"
+    >
+</a>
 
 ## 😳 Woah... dude! So just what is "The JS Quiz"? 
 The JS Quiz is a rigrous and extremely serious quiz to test one's competence in important and widely used JavaScript concepts and wider knowledge. 
@@ -25,3 +31,16 @@ Yes.
 
 ## 📖 License
 Just take it. It's yours. The code is kinda dog💩, and you can't blame me for that. Credit to `NSDawn` is always nice. /srs
+
+
+<style>
+@font-face {
+  font-family: "Fira Code";
+  src: url("./src/assets/fonts/FiraCode.ttf");
+}
+
+* {
+    font-family: "Fira Code";
+}
+
+</style>

@@ -34,12 +34,14 @@ function SceneMCQuestion(props) {
             <RotatingWrapper>
                 <h2> {props.Q.prompt} </h2>
             </RotatingWrapper>
-
+            
+            {props.Q.code !== "" ? (
             <RotatingWrapper>
                 <CodeBlock lang="js" >
                    {props.Q.code}
                 </CodeBlock>
             </RotatingWrapper>
+            ) : null}
                 
             
             <RotatingWrapper>

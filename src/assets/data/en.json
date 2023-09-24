@@ -64,6 +64,19 @@
                 "3"
             ],
             "correctchoice": "4"
+        },
+        "5" : {
+            "type": "MCQuestion",
+            "num":"5",
+            "prompt": "Okay, I admit that one was a little unfair. Now, just pick a color:",
+            "code": "",
+            "choices": [
+                "#55f25f",
+                "#f7df1e",
+                "#a842b8",
+                "#87d0e6"
+            ],
+            "correctchoice": "#f7df1e"
         }
 
     },
