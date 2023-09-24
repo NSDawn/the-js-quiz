@@ -1,10 +1,12 @@
 import './MCButton.css'
+import { useGlobal } from "../../AppContextProvider";
+
 
 function MCButton(props) {
 
     return (
         <>
-            <button className="mcq-button"> {props.children} </button>
+            <button className="mcq-button" onClick={props.onClick}> {props.children} </button>
         </>
     )
 }

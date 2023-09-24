@@ -4,15 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import SceneMCQuestion from './assets/scenes/SceneMCQuestion'
 import S from './assets/data/en.json' 
-import { G } from './AppContextProvider'
+import { useGlobal } from './AppContextProvider'
 
 function App() {
 
-
-  const [global, setGlobal] = G();
-  useEffect(() => {
-    setGlobal({...global, lives: 2});
-  }, [])
+  let [global, setGlobal] = useGlobal();
 
   return (
     <>
@@ -24,10 +20,6 @@ function App() {
       <section className="viewport">
         <SceneMCQuestion Q={S.questions[global.currQuestion]} ></SceneMCQuestion>
       </section>
-
-        <button onClick={() => { setGlobal({...global, currQuestion: global.currQuestion + 1}) }}>
-        debugChangeQuestion
-      </button>
       <footer>
         <h3>
           {S.titles.lives} {global.lives}

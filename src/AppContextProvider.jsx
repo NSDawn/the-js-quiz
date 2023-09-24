@@ -1,14 +1,14 @@
 import React, {useContext, useState} from 'react';
 
-const AppContext = React.createContext("provider didn't work lel")
+const AppContext = React.createContext()
 
 export function AppContextProvider(props) {
     
     const G = useState({
         "currQuestion" : 0, 
-        "lives": 0
-        
+        "lives": 3,
     });
+
     
     return (
         <AppContext.Provider value={G}>
@@ -18,6 +18,18 @@ export function AppContextProvider(props) {
 
 }
 
-export function G() {
+export function useGlobal() {
     return useContext(AppContext);
+}
+
+export function getGlobal(k) {
+    const [_global, _setGlobal] = useGlobal();
+    return _global[k];
+}
+export function setGlobal(k, v) {
+    const [_global, _setGlobal] = useGlobal();
+    let new_global = {..._global};
+    new_global[k] = v;
+    setGlobal(new_global);
+    return v;
 }

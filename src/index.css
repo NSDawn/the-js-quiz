@@ -95,9 +95,10 @@ button {
   transition: border-color 0.15s;
 }
 button:hover {
-  transition: ease-in 0.25s;
+  transition: ease-in 0.15s;
   text-shadow: 1px 1px 2px var(--rgb-bg);
   background-color: var(--rgb-buttonon);
+  transform: scale(1.1);
 }
 button:focus,
 button:focus-visible {
