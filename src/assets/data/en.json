@@ -29,7 +29,7 @@
         "2" : {
             "type": "MCQuestion-code",
             "num":"2",
-            "prompt": "What is returned by the following function?",
+            "prompt": "What is returned or thrown?",
             "code": "const q2 = () => {\n    let k = true;\n    return k++;\n};",
             "choices": [
                 "true",
@@ -42,7 +42,7 @@
         "3" : {
             "type": "MCQuestion-code",
             "num":"3",
-            "prompt": "What is returned by the following function?",
+            "prompt": "What is returned or thrown?",
             "code": "const q3 = () => {\n    return NaN ?? true == NaN;\n}; ",
             "choices": [
                 "true",
@@ -81,7 +81,7 @@
         "6" : {
             "type": "MCQuestion",
             "num":"6",
-            "prompt": "What's returned?",
+            "prompt": "What's returned or thrown?",
             "code": "const q6 = () => {\n    return void 2 == '2';\n};",
             "choices": [
                 "undefined",
@@ -94,7 +94,7 @@
         "7" : {
             "type": "MCQuestion",
             "num":"7",
-            "prompt": "What's returned?",
+            "prompt": "What's returned or thrown?",
             "code": "const q7 = () => {\n    return [][];\n};",
             "choices": [
                 "[]",
@@ -107,7 +107,7 @@
         "8" : {
             "type": "MCQuestion",
             "num":"8",
-            "prompt": "What's returned?",
+            "prompt": "What's returned or thrown?",
             "code": "const q8 = () => {\n    return let = 10;\n};",
             "choices": [
                 "10",
@@ -119,9 +119,9 @@
         },
         "9" : {
             "type": "MCQuestion",
-            "num":"8",
+            "num":"9",
             "prompt": "What's returned?",
-            "code": "const q8 = () => {\n    return !+[]+[];\n};",
+            "code": "const q9 = () => {\n    return !+[]+[];\n};",
             "choices": [
                 "true",
                 "'true'",
@@ -129,6 +129,19 @@
                 "''"
             ],
             "correctchoice": "'true'"
+        },
+        "10" : {
+            "type": "MCQuestion",
+            "num":"10",
+            "prompt": "What's returned, or what error is thrown?",
+            "code": "const q10 = () => {\n    return [][];\n};",
+            "choices": [
+                "undefined",
+                "TypeError",
+                "ReferenceError",
+                "SyntaxError"
+            ],
+            "correctchoice": "SyntaxError"
         }
 
     },

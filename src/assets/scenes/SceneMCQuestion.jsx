@@ -85,5 +85,7 @@ const keywords = {
     "null" : <span className="reservedBool">{"null"}</span>,
     "undefined" : <span className="reservedBool">{"undefined"}</span>,
     "SyntaxError" : <span className="reservedErr">{"SyntaxError"}</span>,
+    "ReferenceError" : <span className="reservedErr">{"ReferenceError"}</span>,
+    "TypeError" : <span className="reservedErr">{"TypeError"}</span>,
 }
 
