@@ -1,6 +1,6 @@
 import './MCButton.css'
 import { useGlobal } from "../../AppContextProvider";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 function MCButton(props) { /* onClick, isCorrect */
@@ -10,6 +10,10 @@ function MCButton(props) { /* onClick, isCorrect */
         setIsAnimating(true);
         setTimeout (() => {setIsAnimating(false)}, milliseconds);
     }
+    // go ahead and reset animation immediately to normal if the children change, change later if animation-correct added;
+    useEffect(() => {
+        setIsAnimating(false);
+    }, [props.children])
 
     return (
         <>
