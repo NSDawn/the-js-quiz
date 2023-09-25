@@ -1,0 +1,8 @@
+.mcq-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.mcq-button {
+    margin: 0.5rem;
+}

@@ -1,6 +1,7 @@
 import MCButton from "../components/MCButton"
 import CodeBlock from "../components/CodeBlock";
 import RotatingWrapper from "../components/RotatingWrapper";
+import "./SceneMCQuestion.css";
 import { useGlobal } from "../../AppContextProvider";
 
 function SceneMCQuestion(props) {
@@ -46,11 +47,15 @@ function SceneMCQuestion(props) {
             
             <RotatingWrapper>
                 <div className="mcq-options">
-                    <MCButton onClick={()=>{answerClicked(isChoiceCorrect[0])}}>{formatKeywords(props.Q.choices[0])}</MCButton>
-                    <MCButton onClick={()=>{answerClicked(isChoiceCorrect[1])}}>{formatKeywords(props.Q.choices[1])}</MCButton>
-                    <br />
-                    <MCButton onClick={()=>{answerClicked(isChoiceCorrect[2])}}>{formatKeywords(props.Q.choices[2])}</MCButton>
-                    <MCButton onClick={()=>{answerClicked(isChoiceCorrect[3])}}>{formatKeywords(props.Q.choices[3])}</MCButton>
+                    {props.Q.choices.map((v, i) => { 
+                        return (
+                            <>
+                                <MCButton onClick={()=>{answerClicked(isChoiceCorrect[i])}} isCorrect={isChoiceCorrect[i]} key={i}>
+                                    {formatKeywords(v)}
+                                </MCButton>
+                            </>
+                        )
+                    })}
                 </div>
             </RotatingWrapper>
             

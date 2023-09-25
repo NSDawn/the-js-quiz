@@ -16,6 +16,8 @@
 
 
 * {
+  --rgb-debug: #ff3590;
+
   --rgb-indicator: #eb4343;
   --rgb-bg: #242424;
   --rgb-text: #ffffff;

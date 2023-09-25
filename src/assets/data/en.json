@@ -77,6 +77,58 @@
                 "#87d0e6"
             ],
             "correctchoice": "#f7df1e"
+        },
+        "6" : {
+            "type": "MCQuestion",
+            "num":"6",
+            "prompt": "What's returned?",
+            "code": "const q6 = () => {\n    return void 2 == '2';\n};",
+            "choices": [
+                "undefined",
+                "true",
+                "false",
+                "SyntaxError"
+            ],
+            "correctchoice": "false"
+        },
+        "7" : {
+            "type": "MCQuestion",
+            "num":"7",
+            "prompt": "What's returned?",
+            "code": "const q7 = () => {\n    return [][];\n};",
+            "choices": [
+                "[]",
+                "undefined",
+                "''",
+                "SyntaxError"
+            ],
+            "correctchoice": "SyntaxError"
+        }, 
+        "8" : {
+            "type": "MCQuestion",
+            "num":"8",
+            "prompt": "What's returned?",
+            "code": "const q8 = () => {\n    return let = 10;\n};",
+            "choices": [
+                "10",
+                "undefined",
+                "null",
+                "SyntaxError"
+            ],
+            "correctchoice": "10"
+        },
+        "9" : {
+            "type": "MCQuestion",
+            "num":"8",
+            "prompt": "What's returned?",
+            "code": "const q8 = () => {\n    return !+[]+[];\n};",
+            "choices": [
+                "true",
+                "'true'",
+                "[]",
+                "''"
+            ],
+            "correctchoice": "'true'"
         }
 
     },

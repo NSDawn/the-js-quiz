@@ -25,7 +25,7 @@ export function useGlobal() {
 export function getGlobal(k) {
     const [_global, _setGlobal] = useGlobal();
     return _global[k];
-}
+} 
 export function setGlobal(k, v) {
     const [_global, _setGlobal] = useGlobal();
     let new_global = {..._global};

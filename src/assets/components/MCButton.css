@@ -1,5 +1,38 @@
-button {
-    width: 40%;
-    margin: 1vw;
+.mcq-button {
     font-family: 'Fira Code';
 }
+mcq-button.animate-correct {
+
+} 
+.mcq-button.animate-incorrect {
+    outline: 0.25rem dotted var(--rgb-indicator);
+    animation: animate-incorrect forwards 0.25s;
+} 
+
+@keyframes animate-incorrect {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(-2vw);
+    }
+    30% {
+        transform: translateX(2vw);
+    }
+    50% {
+        transform: translateX(-1vw);
+    }
+    70% {
+        transform: translateX(1vw);
+    }
+    80% {
+        transform: translateX(-0.5vw);
+    }
+    90% {
+        transform: translateX(0.5vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
