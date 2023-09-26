@@ -1,0 +1,47 @@
+.lives-counter {
+    font-family: inherit;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 10px;
+    outline: var(--rgb-text) solid 0.1em;
+    transition: ease-in-out 0.1s;
+}
+
+.lives-counter.animate-reset {
+    transform: scale(1.2);
+    font-size: 150%;
+    transition: ease-in-out 0.2s;
+}
+
+.lives-counter.animate-loss {
+    transition: ease-out 0.2s;
+    color: var(--rgb-indicator);
+    animation: animate-loss forwards .25s;
+}
+
+@keyframes animate-loss {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(2vw);
+    }
+    30% {
+        transform: translateX(-2vw);
+    }
+    50% {
+        transform: translateX(1vw);
+    }
+    70% {
+        transform: translateX(-1vw);
+    }
+    80% {
+        transform: translateX(0.5vw);
+    }
+    90% {
+        transform: translateX(-0.5vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}

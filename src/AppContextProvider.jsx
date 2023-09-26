@@ -7,6 +7,7 @@ export function AppContextProvider(props) {
     const G = useState({
         "currQuestion" : 0, 
         "lives": 3,
+        "MAX_LIVES": 3, /* const */ 
     });
 
     

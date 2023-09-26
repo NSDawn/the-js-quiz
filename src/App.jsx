@@ -1,15 +1,15 @@
-import { useState, useContext, useEffect} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import SceneMCQuestion from './assets/scenes/SceneMCQuestion'
-import S from './assets/data/en.json' 
-import { useGlobal } from './AppContextProvider'
+import SceneMCQuestion from './assets/scenes/SceneMCQuestion';
+import S from './assets/data/en.json';
+import { useState } from 'react';
+import { useGlobal } from './AppContextProvider';
+import LivesCounter from './assets/components/LivesCounter';
 
 function App() {
 
-  let [global, setGlobal] = useGlobal();
-
+  const [global, setGlobal] = useGlobal();
+  
+  
   return (
     <>
       <header>
@@ -21,9 +21,8 @@ function App() {
         <SceneMCQuestion Q={S.questions[global.currQuestion]} ></SceneMCQuestion>
       </section>
       <footer>
-        <h3>
-          {S.titles.lives} {global.lives}
-        </h3>
+        
+        <LivesCounter />
       </footer>
     </>
   )
