@@ -21,9 +21,10 @@
   cursor: pointer;
 }
 
-.github-link {
+.github-link > svg {
   transition: ease-in-out 0.15s;
+  width: 2rem;
 }
-.github-link:hover {
+.github-link > svg:hover {
   transform: scale(1.1);
 }
