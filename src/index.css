@@ -3,6 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
+  padding: 0vw 10vw;
+
+  font-size: clamp(10px, 1.8vw, 16px);
+
   color-scheme: light dark;
   color: var(--rgb-text);
   background-color: var(--rgb-bg);

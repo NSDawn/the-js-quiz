@@ -1,5 +1,6 @@
 .mcq-button {
     font-family: 'Fira Code';
+    font-size: clamp(16px, 1rem, 24px);
 }
 mcq-button.animate-correct {
 
