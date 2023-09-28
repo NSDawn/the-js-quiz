@@ -262,18 +262,60 @@
         },
         "20" : {
             "type": "MCQuestion",
-            "num":"19",
+            "num":"20",
             "prompt": "More from parseInt()! What is returned by this function?",
-            "code": "const q19 = () => {\n    const integers = [\n        0.001, 0.0001, 0.00001, 0.00001, 0.0000001, 0.0000001\n    ];\n\n    return integers.reduce((acc, v) =>\n        {return acc + parseInt(v)},\n        0\n    );\n};",
+            "code": "const q20 = () => {\n    const integers = [\n        0.001, 0.0001, 0.00001, 0.00001, 0.0000001, 0.0000001\n    ];\n\n    return integers.reduce((acc, v) =>\n        {return acc + parseInt(v)},\n        0\n    );\n};",
             "choices": [
                 "0",
                 "1",
                 "2",
                 "NaN"
             ],
-            "correctchoice": "tests if an input is greater than 24 and less than 37"
+            "correctchoice": "2"
+        },
+        "21" : {
+            "type": "MCQuestion",
+            "num":"21",
+            "prompt": "I'm making a function ",
+            "embedded_choice": "🐈()",
+            "prompttail": ", and I'm still not sure what to call it. Which class name wouldn't work?",
+            "code": "class 🐈 {\n    constructor(display_name, breed) {\n        this.display_name = display_name; \n        this.breed = breed;\n    }\n    meow() {\n        console.log(`${this.display_name} says, 'Meow, world!'.`);\n    }\n}",
+            "choices": [
+                "बिल्ली()",
+                "猫()",
+                "𓃠()",
+                "قطة()"
+            ],
+            "correctchoice": "🐈()"
+        },
+        "22" : {
+            "type": "MCQuestion",
+            "num":"22",
+            "prompt": "Okay, I think I've implemented the class correctly...",
+            "code": "const q22 = () => {\n\n    class 猫 {\n        consturctor(display_name, breed, weight) {\n            this.display_name = display_name;\n            this.weight = parseInt(weight);\n            this.breed = breed;\n        }\n        meow() {\n            console.log(`${this.display_name} says, 'Meow, world!'`)\n        }\n    }\n\n    return new 猫(2, 'tabby').breed;\n};",
+            "choices": [
+                "2",
+                "'tabby'",
+                "undefined",
+                "[object 猫]"
+            ],
+            "correctchoice": "undefined"
+        },
+        "23": {
+            "type": "MCQuestion",
+            "num":"23",
+            "prompt": "Always remember to comment your code! Code is ",
+            "embedded_choice": "undefined",
+            "prompttail": " without comments!",
+            "code": "const q23 = () => {\n    // setting i to 1\n    let i = 0;\n\n    // this code decrements i\n    <!-- i++ -->; i++;\n    i++;\n\n    // this is a for loop\n    return i;\n};",
+            "choices": [
+                "1",
+                "2",
+                "3",
+                "SyntaxError"
+            ],
+            "correctchoice": "1"
         }
-
 
     },
     "titles": {

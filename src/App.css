@@ -13,11 +13,24 @@
   outline: 0.25em solid var(--rgb-indicator);
   border-radius: 50%;
   color: var(--rgb-indicator);
+  transition: ease-in 0.15s;
+
 }
 
 .question-number:hover {
   transform: scale(1.1);
+  cursor: pointer;
+}
+
+.embedded-choice {
   transition: ease-in 0.15s;
+}
+
+.embedded-choice:hover {
+  font-size: 110%;
+  font-family: "Fira Code";
+  text-shadow: 1px 1px 2px var(--rgb-black);
+  text-decoration: underline 0.1em;
   cursor: pointer;
 }
 

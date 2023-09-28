@@ -3,6 +3,7 @@ import CodeBlock from "../components/CodeBlock";
 import RotatingWrapper from "../components/RotatingWrapper";
 import "./SceneMCQuestion.css";
 import { useGlobal } from "../../AppContextProvider";
+import { useEffect } from "react";
 
 function SceneMCQuestion(props) {
 
@@ -20,8 +21,10 @@ function SceneMCQuestion(props) {
         setGlobal({...global, lives: global.lives -1})
     }
 
-    const isChoiceCorrect = Array.from([0, 1, 2, 3], (v) => {return props.Q.choices[v] == props.Q.correctchoice})
-    const isNumCorrect = props.Q.num == props.Q.correctchoice;
+    const isChoiceCorrect = Array.from([0, 1, 2, 3], (v) => {return props.Q.choices[v] === props.Q.correctchoice})
+    const isNumCorrect = props.Q.num === props.Q.correctchoice;
+    const isEmbeddedCorrect = (props.Q.embedded_choice ?? NaN) === props.Q.correctchoice
+
 
     return (
         <>  
@@ -33,7 +36,11 @@ function SceneMCQuestion(props) {
             </RotatingWrapper>
 
             <RotatingWrapper>
-                <h2> {props.Q.prompt} </h2>
+                <h2> 
+                    {props.Q.prompt}
+                    <span className="embedded-choice" onClick={()=>{answerClicked(isEmbeddedCorrect)}}>{props.Q.embedded_choice ?? ""}</span> 
+                    {props.Q.prompttail ?? ""}
+                </h2>
             </RotatingWrapper>
             
             {props.Q.code !== "" ? (
@@ -88,4 +95,6 @@ const keywords = {
     "ReferenceError" : <span className="reservedErr">{"ReferenceError"}</span>,
     "TypeError" : <span className="reservedErr">{"TypeError"}</span>,
 }
+
+
 
