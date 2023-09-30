@@ -34,10 +34,3 @@
   cursor: pointer;
 }
 
-.github-link > svg {
-  transition: ease-in-out 0.15s;
-  width: 2rem;
-}
-.github-link > svg:hover {
-  transform: scale(1.1);
-}
