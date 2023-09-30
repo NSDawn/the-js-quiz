@@ -25,7 +25,6 @@ function SceneMCQuestion(props) {
     const isNumCorrect = props.Q.num === props.Q.correctchoice;
     const isEmbeddedCorrect = (props.Q.embedded_choice ?? NaN) === props.Q.correctchoice
 
-
     return (
         <>  
 
@@ -35,7 +34,7 @@ function SceneMCQuestion(props) {
                 </div>
             </RotatingWrapper>
 
-            <RotatingWrapper>
+            <RotatingWrapper> 
                 <h2> 
                     {props.Q.prompt}
                     <span className="embedded-choice" onClick={()=>{answerClicked(isEmbeddedCorrect)}}>{props.Q.embedded_choice ?? ""}</span> 

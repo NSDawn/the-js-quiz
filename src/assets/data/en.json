@@ -315,6 +315,32 @@
                 "SyntaxError"
             ],
             "correctchoice": "1"
+        },
+        "24": {
+            "type": "MCQuestion",
+            "num":"24",
+            "prompt": "don't be alarmed. this one is easy...",
+            "code": "const q24 = () => {\n    let a = true\n    a = false;\n\n    return a;\n};",
+            "choices": [
+                "true",
+                "false",
+                "undefined",
+                "SyntaxError"
+            ],
+            "correctchoice": "false"
+        },
+        "25": {
+            "type": "MCQuestion",
+            "num":"25",
+            "prompt": "if at first you don't succeed...",
+            "code": "const q25 = () => {\n   try {\n        return 1;\n    } catch {\n        return 2;\n    } finally {\n        return 3;\n    }\n};",
+            "choices": [
+                "1",
+                "2",
+                "3",
+                "SyntaxError"
+            ],
+            "correctchoice": "3"
         }
 
     },
