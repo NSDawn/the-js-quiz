@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: var(--rgb-text);
-  background-color: var(--rgb-bg);
+  background: linear-gradient( to bottom, var(--rgb-bg) 60%, var(--rgb-black) 100%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,11 +23,12 @@
   --rgb-debug: #ff3590;
 
   --rgb-indicator: #eb4343;
+  --rgb-indicator2: #70e4b4;
   --rgb-bg: #242424;
   --rgb-black: #000000;
   --rgb-text: #ffffff;
 
-  --rgb-buttonon: rgb(137, 123, 98);
+  --rgb-buttonon: #858585;
   --rgb-buttonoff: #4c4848;
 
   --rgb-reservedbool: #f6e0b4;
@@ -80,6 +81,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -112,3 +114,137 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* decoration ======================================= */
+
+:root {
+  --rgb-planet: #f7df1e;
+  --rgb-earth: #0d829d;
+  --rgb-earth-land: #4ce15388;
+  --rgb-earth-cloud: #ffffff55;
+}
+
+.bg-decoration > .planet {
+  position: fixed;
+  top: -15vh;
+  right: -25vh;
+  z-index: -1;
+  background: linear-gradient( var(--rgb-text), var(--rgb-planet));
+  box-shadow: 0 0 10px var(--rgb-planet);
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  
+}
+
+.bg-decoration > .star {
+  position: fixed;
+  background: linear-gradient( var(--rgb-text), var(--rgb-planet));
+  z-index: -1;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px var(--rgb-planet);
+}
+
+.bg-decoration > .star:nth-child(even) {
+  width: 5px;
+  height: 5px;
+}
+
+
+.bg-decoration > .star.a {
+  top: 30vh;
+  right: 30vh;
+}
+.bg-decoration > .star.b {
+  top: 40vh;
+  right: 34vh;
+}
+.bg-decoration > .star.c {
+  top: 10vh;
+  right: 60vh;
+}
+.bg-decoration > .star.d {
+  top: 5vh;
+  right: 90vh;
+}
+.bg-decoration > .star.e {
+  top: 84vh;
+  right: 9vh;
+}
+.bg-decoration > .star.f {
+  top: 67vh;
+  right: 24vh;
+}
+.bg-decoration > .star.g {
+  top: 58vh;
+  right: 21vh;
+}
+
+.bg-decoration > .earth {
+  position: absolute; 
+  z-index: -2;
+  bottom: -40vh;
+  left: -40vh;
+  width: 80vh;
+  height: 80vh;
+  border-radius: 50%;
+  background: linear-gradient(var(--rgb-earth), var(--rgb-text));
+  box-shadow: 0 0 10px var(--rgb-text);
+  overflow: hidden; 
+}
+
+.bg-decoration > .earth > .land {
+  z-index: -1;
+  border-radius: 50%;
+  position: relative;
+  background: var(--rgb-earth-land);
+  box-shadow: 0px 0px 10px var(--rgb-earth-land);
+}
+
+.bg-decoration > .earth > .cloud {
+  z-index: -1;
+  border-radius: 50%;
+  position: relative;
+  background: var(--rgb-earth-cloud);
+  box-shadow: 0px 0px 10px var(--rgb-earth-cloud);
+}
+
+.bg-decoration > .earth > .land.a {
+  transform: rotate(-50deg);
+  width: 30vh;
+  height: 20vh;
+  right: -50vh;
+  top: 30vh;
+}
+.bg-decoration > .earth > .land.b {
+  transform: rotate(10deg);
+  width: 50vh;
+  height: 10vh;
+  right: -40vh;
+  top: -20vh;
+}
+
+.bg-decoration > .earth > .land.c {
+  transform: rotate(-50deg);
+  width: 5vh;
+  height: 7vh;
+  right: -70vh;
+  top: -10vh;
+}
+
+.bg-decoration > .earth > .cloud.a {
+  transform: rotate(40deg);
+  width: 50vh;
+  height: 50vh;
+  right: -10vh;
+  top: -10vh;
+}
+
+.bg-decoration > .earth > .cloud.b {
+  transform: rotate(-70deg);
+  width: 20vh;
+  height: 30vh;
+  right: -50vh;
+  top: -90vh;
+}

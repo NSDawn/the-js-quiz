@@ -128,7 +128,7 @@
                 "Javascript but all variable declarations need to be suffixed with `:any`",
                 "blazingly fast 🔥🔥🔥"
             ],
-            "correctchoice": "Javascript but variable declarations need to be suffixed with `:any`"
+            "correctchoice": "Javascript but all variable declarations need to be suffixed with `:any`"
         },
         "10" : {
             "type": "MCQuestion",
@@ -158,7 +158,7 @@
         }, 
         "12" : {
             "type": "MCQuestion",
-            "num":"12",
+            "num":"--12",
             "prompt": "Something broke with JSDL and our customer database got scrambled!",
             "code": "",
             "choices": [
@@ -345,22 +345,37 @@
         "26" : {
             "type": "MCQuestion",
             "num":"26",
-            "prompt": "what key dependency does the web irresponsibly rely on?",
-            "code": "",
+            "prompt": "how bitshift?",
+            "code": "const q13 = () => {\n    return 256 << -!!{};\n};",
             "choices": [
-                "they always keep their promises",
-                "they'll never treat you like an object",
-                "they understand the importance of closure",
-                "they're experts at manipulation and coersion"
+                "0",
+                "128",
+                "512",
+                "SyntaxError"
             ],
-            "correctchoice": "they understand the importance of closure"
+            "correctchoice": "0"
+        },
+        "27" : {
+            "type": "MCQuestion",
+            "num":"27",
+            "prompt": "i got ",
+            "embedded_choice": "4294967296",
+            "prompttail": " problems, and bitshifting is definitely one of them.",
+            "code" : "const q = () => {\n    (1 << 30); // -> 1073741824\n    return ((1 << 30) * 2) + (1 << 31);\n};",
+            "choices": [
+                "2147483648",
+                "3221225472",
+                "0",
+                "NaN"
+            ],
+            "correctchoice": "0"
         }
 
     },
     "titles": {
         "the_js_quiz": "The JS Quiz",
         "lives": "Lives:",
-        "implemented_with":  "implemented with:"
+        "implemented_with": "implemented with:"
     }
 }
 

@@ -23,9 +23,7 @@ function App() {
       </section>
       
       <footer>
-
         <Footer />
-
       </footer>
     </>
   )
