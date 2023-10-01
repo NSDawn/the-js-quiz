@@ -158,29 +158,29 @@
         }, 
         "12" : {
             "type": "MCQuestion",
-            "num":"--12",
-            "prompt": "Something broke with JSDL and our customer database got scrambled!",
+            "num":"12",
+            "prompt": "which of the following won't throw an error?",
             "code": "",
             "choices": [
-                "Jake added evil comments",
-                "Tom's JSON interpreter failed",
-                "rm -rf",
-                "=="
+                "37.toString();",
+                "print('Hi, mom!');",
+                "document.getElementbyClassName('hi-mom');",
+                "Math.ln(2);"
             ],
-            "correctchoice": "Jake added evil comments"
+            "correctchoice": "print('Hi, mom!');"
         },
         "13" : {
             "type": "MCQuestion",
             "num":"13",
-            "prompt": "evil bitshifting?",
-            "code": "const q13 = () => {\n    return 256 << -!!{};\n};",
+            "prompt": "all kids know how to do is loop for, coerce type, destructure and lie",
+            "code": "const q13 = () => {\n    const f = (...x, y) => {\n        for (let i = x.length; i > 0; --i) {\n            y -= x[i];\n        }\n        return y;\n    }\n    arr = [true, 0.5, true, false];\n\n    return f(...arr, 2);\n};",
             "choices": [
-                "0",
-                "128",
-                "512",
-                "SyntaxError"
+                "0.5",
+                "-0.5",
+                "SyntaxError",
+                "NaN"
             ],
-            "correctchoice": "0"
+            "correctchoice": "SyntaxError"
         },
         "14" : {
             "type": "MCQuestion",

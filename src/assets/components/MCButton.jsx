@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 
 function MCButton(props) { /* onClick, isCorrect */
     
+    const [global, _] = useGlobal()
+
     const [isAnimating, setIsAnimating] = useState(false);
     function doAnimate(milliseconds) {
         setIsAnimating(true);
@@ -13,7 +15,7 @@ function MCButton(props) { /* onClick, isCorrect */
     // go ahead and reset animation immediately to normal if the children change, change later if animation-correct added;
     useEffect(() => {
         setIsAnimating(false);
-    }, [props.children])
+    }, [global.currQuestion])
 
     return (
         <>
