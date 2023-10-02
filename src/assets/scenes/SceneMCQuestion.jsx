@@ -21,17 +21,39 @@ function SceneMCQuestion(props) {
         setGlobal({...global, lives: global.lives -1})
     }
 
-    const isChoiceCorrect = Array.from([0, 1, 2, 3], (v) => {return props.Q.choices[v] === props.Q.correctchoice})
+    function JSClicked() {
+        // make the game beatable on mobile bc no hover effect
+        if ((window.innerWidth <= 768) && (window.innerHeight <= 1024) && /Mobi|Android/i.test(navigator.userAgent)) {
+            answerClicked(true); return true;
+        }
+        const element = document.getElementsByClassName('embedded-js-choice')[0];
+        const cursorStyle = window.getComputedStyle(element).getPropertyValue('cursor');
+        if (cursorStyle === 'pointer') {answerClicked(true); return true;}
+        return false;
+    }
+
+    const isChoiceCorrect = Array.from([0, 1, 2, 3, 4, 5, 6], (v) => {return props.Q.choices[v] === props.Q.correctchoice})
     const isNumCorrect = props.Q.num === props.Q.correctchoice;
     const isEmbeddedCorrect = (props.Q.embedded_choice ?? NaN) === props.Q.correctchoice
 
     return (
         <>  
+            { global.currQuestion == '31' ? 
+            <h1>
+                The&nbsp;
+                <span className="embedded-js-choice" onClick={JSClicked}>
+                    J<span>ava</span>S<span>cript</span>
+                </span> 
+                &nbsp;Quiz
+            </h1>
+            : null}
 
             <RotatingWrapper>
+                { props.Q.num != null ?
                 <div className="question-number" onClick={()=>{answerClicked(isNumCorrect)}}>
                     <h2>{props.Q.num}</h2>
                 </div>
+                : null}
             </RotatingWrapper>
 
             <RotatingWrapper> 
@@ -42,7 +64,7 @@ function SceneMCQuestion(props) {
                 </h2>
             </RotatingWrapper>
             
-            {props.Q.code !== "" ? (
+            {![null, ""].includes(props.Q.code) ? (
             <RotatingWrapper>
                 <CodeBlock lang="js" >
                    {props.Q.code}

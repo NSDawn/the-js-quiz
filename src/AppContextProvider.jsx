@@ -5,7 +5,7 @@ const AppContext = React.createContext()
 export function AppContextProvider(props) {
     
     const G = useState({
-        "currQuestion" : 26, //0,
+        "currQuestion" : 0, //0,
         "lives": 3,
         "MAX_LIVES": 3, 
     });

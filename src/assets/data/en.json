@@ -16,7 +16,7 @@
         "1" : {
             "type": "MCQuestion-code",
             "num":"1",
-            "prompt": "in Javascript, unary operators are a plus.",
+            "prompt": "in JavaScript, unary operators are a plus.",
             "code": "const q1 = () => {\n    return +[];\n};",
             "choices": [
                 "0",
@@ -125,10 +125,10 @@
             "choices": [
                 "a superset of JavaScript that adds important type safety features",
                 "literally Rust",
-                "Javascript but all variable declarations need to be suffixed with `:any`",
+                "JavaScript but all variable declarations need to be suffixed with `:any`",
                 "blazingly fast 🔥🔥🔥"
             ],
-            "correctchoice": "Javascript but all variable declarations need to be suffixed with `:any`"
+            "correctchoice": "JavaScript but all variable declarations need to be suffixed with `:any`"
         },
         "10" : {
             "type": "MCQuestion",
@@ -346,14 +346,14 @@
             "type": "MCQuestion",
             "num":"26",
             "prompt": "string manip",
-            "code": "const q26 = () => {\n    const f = (int, str) => {\n        for (let i = 0; i < str; i++) {\n            int = int.replace('a', 'ava')\n        };\n        return int;\n    };\n\n    return f('Javascript', 2)\n};",
+            "code": "const q26 = () => {\n    const f = (int, str) => {\n        for (let i = 0; i < str; i++) {\n            int = int.replace('a', 'ava')\n        };\n        return int;\n    };\n\n    return f('JavaScript', 2)\n};",
             "choices": [
-                "'Javavascript'",
-                "'Javavavascript'",
-                "'Javavavavavavavascript'",
+                "'JavavaScript'",
+                "'JavavavaScript'",
+                "'JavavavavavavavaScript'",
                 "SyntaxError"
             ],
-            "correctchoice": "'Javavavascript'"
+            "correctchoice": "'JavavavaScript'"
         },
         "27" : {
             "type": "MCQuestion",
@@ -409,8 +409,28 @@
                 "'311'"
             ],
             "correctchoice": "'311'"
+        },
+        "31" : {
+            "type": "MCQuestion-code",
+            "num": "31",
+            "prompt": "so... which language is best, most versatile, fastest and most beautiful?",
+            "choices": [
+                "`Jav${((0/0)+[])[2]}Script`",
+                "'JiviScript'.replaceAll('i', 'a')",
+                "'Java'.concat('Scrıpt')",
+                "ES4",
+                "'tpircSavaJ'.reverse()'",
+                "'JavaScrrept'",
+                "'JavaScript' ? 'Javascript' : 'JavaScript'",
+                "JavaScript = 'JαvαScript'"
+            ],
+            "correctchoice": "Javascript"
+        },
+        "32" : {
+            "prompt": "// gj u is win idek. 🏆",
+            "choices": [],
+            "correctchoice": "thisisthelastquestionlol"
         }
-
     },
     "titles": {
         "the_js_quiz": "The JS Quiz",

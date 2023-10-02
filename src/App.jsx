@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       <header>
-        <h1>
-          {S.titles.the_js_quiz}
-        </h1>
+        { global.currQuestion != '31' ? 
+            <h1>
+                The JS Quiz
+            </h1>
+        : null}
       </header>
       <section className="viewport">
         <SceneMCQuestion Q={S.questions[global.currQuestion]} ></SceneMCQuestion>

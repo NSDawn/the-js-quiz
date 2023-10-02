@@ -37,3 +37,50 @@
   cursor: pointer;
 }
 
+.embedded-js-choice {
+  animation: none;
+}
+.embedded-js-choice > span {
+  font-size: 0;
+}
+.embedded-js-choice:hover {
+  animation: slow-highlight 20s forwards;
+}
+.embedded-js-choice:hover > span {
+  animation: slow-show 14s forwards;
+}
+@keyframes slow-highlight {
+  0% {
+    font-size: 100%;
+    font-family: "Victor Mono";
+    text-shadow: inherit;
+    text-decoration: none;
+    cursor: inherit;
+  }
+  40% {
+    cursor: inherit;
+  }
+  100% {
+    font-size: 130%;
+    font-family: "Fira Code";
+    text-shadow: 1px 1px 2px var(--rgb-black);
+    text-decoration: underline 0.1em;
+    cursor: pointer;
+    content: "JavaScript";
+  }
+}
+@keyframes slow-show {
+  0% {
+    display: inline;
+    font-size: 0%;
+    cursor: pointer;
+  }
+  80% {
+    display: inline;
+    font-size: 0%;
+  }
+  100% {
+    display: inline;
+    font-size: 100%;
+  }
+}
