@@ -27,7 +27,7 @@ While it doesn't disqualify you from being a good JS developer, this quiz covers
 The JS Quiz uses the front-end full-stack JavaScript library framework language known as [React](https://www.solidjs.com/), made by Facebook's [Meta](https://en.wikipedia.org/wiki/Vaporware) corporation. That's why it's so blazingly fast 🥵🔥🔥!
 
 ## 🙎🏽‍♀️ Is this a bloody joke, m8?
-Yes.
+Yes. Inspired by Splapp-Me-Do's [_The Impossible Quiz_](https://en.wikipedia.org/wiki/The_Impossible_Quiz).
 
 ## 🖍️ Answer Key and Explanations
 <a href="./public/answer-key.md">Here.</a>

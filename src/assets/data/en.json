@@ -56,7 +56,7 @@
             "type": "MCQuestion-code",
             "num":"4",
             "prompt": "functional programming creates readable paradigms :)",
-            "code": "const q3 = () => {\n   let fs = []\n   let k = 0;\n   for (var i = 0; i < 2; i++) {\n       fs.push(function() { k += i });\n   };\n   fs.forEach((f) => {f()});\n   return k;\n};",
+            "code": "const q4 = () => {\n   let fs = []\n   let k = 0;\n   for (var i = 0; i < 2; i++) {\n       fs.push(function() { k += i });\n   };\n   fs.forEach((f) => {f()});\n   return k;\n};",
             "choices": [
                 "0",
                 "1",
@@ -251,7 +251,7 @@
             "type": "MCQuestion",
             "num":"19",
             "prompt": "more from parseInt()!",
-            "code": "const q19 = () => {\n    const integers = [\n        0.001, 0.0001, 0.00001, 0.00001, 0.0000001, 0.0000001\n    ];\n\n    return integers.reduce((acc, v) =>\n        {return acc + parseInt(v)},\n        0\n    );\n};",
+            "code": "const q19 = () => {\n    const integers = [\n        0.0001, 0.00001, 0.000001, 0.0000001, 0.00000001\n    ];\n\n    return integers.reduce((acc, v) =>\n        {return acc + parseInt(v)},\n        0\n    );\n};",
             "choices": [
                 "0",
                 "1",
@@ -276,9 +276,9 @@
         "21" : {
             "type": "MCQuestion",
             "num":"21",
-            "prompt": "I'm making a function ",
+            "prompt": "i'm making a function ",
             "embedded_choice": "🐈()",
-            "prompttail": ", and I'm still not sure what to call it. Which class name wouldn't work?",
+            "prompttail": ", and i'm still not sure what to call it. which class name wouldn't work?",
             "code": "class 🐈 {\n    constructor(display_name, breed) {\n        this.display_name = display_name; \n        this.breed = breed;\n    }\n    meow() {\n        console.log(`${this.display_name} says, 'Meow, world!'.`);\n    }\n}",
             "choices": [
                 "बिल्ली()",
@@ -291,7 +291,7 @@
         "22" : {
             "type": "MCQuestion",
             "num":"22",
-            "prompt": "Okay, I think I've implemented the class correctly...",
+            "prompt": "okay, i think i've implemented the class correctly...",
             "code": "const q22 = () => {\n\n    class 猫 {\n        consturctor(display_name, breed, weight) {\n            this.display_name = display_name;\n            this.weight = parseInt(weight);\n            this.breed = breed;\n        }\n        meow() {\n            console.log(`${this.display_name} says, 'Meow, world!'`)\n        }\n    }\n\n    return new 猫(2, 'tabby').breed;\n};",
             "choices": [
                 "2",
@@ -304,7 +304,7 @@
         "23": {
             "type": "MCQuestion",
             "num":"23",
-            "prompt": "Always remember to comment your code! Code is ",
+            "prompt": "always remember to comment your code! code is ",
             "embedded_choice": "undefined",
             "prompttail": " without comments!",
             "code": "const q23 = () => {\n    // setting i to 1\n    let i = 0;\n\n    // this code decrements i\n    <!-- i++ -->; i++;\n    i++;\n\n    // this is a for loop\n    return i;\n};",
@@ -333,7 +333,7 @@
             "type": "MCQuestion",
             "num":"25",
             "prompt": "if at first you don't succeed...",
-            "code": "const q25 = () => {\n   try {\n        return 1;\n    } catch {\n        return 2;\n    } finally {\n        return 3;\n    }\n};",
+            "code": "const q25 = () => {\n    try {\n        return 1;\n    } catch {\n        return 2;\n    } finally {\n        return 3;\n    }\n};",
             "choices": [
                 "1",
                 "2",
@@ -373,7 +373,7 @@
             "type": "MCQuestion",
             "num":"28",
             "prompt": "how bitshift?",
-            "code": "const q27 = () => {\n    return 256 << -!!{};\n};",
+            "code": "const q28 = () => {\n    return 256 << -!!{};\n};",
             "choices": [
                 "0",
                 "128",
@@ -414,6 +414,7 @@
             "type": "MCQuestion-code",
             "num": "31",
             "prompt": "so... which language is best, most versatile, fastest and most beautiful?",
+            "code": "",
             "choices": [
                 "`Jav${((0/0)+[])[2]}Script`",
                 "'JiviScript'.replaceAll('i', 'a')",
@@ -428,6 +429,7 @@
         },
         "32" : {
             "prompt": "// gj u is win idek. 🏆",
+            "code": "you are a certified programming virtuoso.",
             "choices": [],
             "correctchoice": "thisisthelastquestionlol"
         }
