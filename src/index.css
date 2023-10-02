@@ -81,7 +81,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  overflow: hidden;
 }
 
 h1 {
@@ -119,6 +118,11 @@ button:hover {
   --rgb-earth-land: #4ce15388;
   --rgb-earth-cloud: #ffffff55;
 }
+
+.bg-decoration {
+  position: absolute;
+}
+
 
 .bg-decoration > .planet {
   position: fixed;
@@ -179,7 +183,7 @@ button:hover {
 }
 
 .bg-decoration > .earth {
-  position: absolute; 
+  position: fixed; 
   z-index: -2;
   bottom: -40vh;
   left: -40vh;

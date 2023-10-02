@@ -35,7 +35,7 @@ function SceneMCQuestion(props) {
             </RotatingWrapper>
 
             <RotatingWrapper> 
-                <h2> 
+                <h2 className="prompt"> 
                     {props.Q.prompt}
                     <span className="embedded-choice" onClick={()=>{answerClicked(isEmbeddedCorrect)}}>{props.Q.embedded_choice ?? ""}</span> 
                     {props.Q.prompttail ?? ""}

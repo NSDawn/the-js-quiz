@@ -29,6 +29,9 @@ The JS Quiz uses the front-end full-stack JavaScript library framework language 
 ## 🙎🏽‍♀️ Is this a bloody joke, m8?
 Yes.
 
+## 🖍️ Answer Key and Explanations
+<a href="./public/answer-key.md">Here.</a>
+
 ## 📖 License
 Just take it. It's yours. The code is kinda dog💩, and you can't blame me for that. Credit to `NSDawn` is always nice. /srs
 

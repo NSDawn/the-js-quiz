@@ -177,8 +177,8 @@
             "choices": [
                 "0.5",
                 "-0.5",
-                "SyntaxError",
-                "NaN"
+                "NaN",
+                "SyntaxError"
             ],
             "correctchoice": "SyntaxError"
         },
@@ -345,8 +345,35 @@
         "26" : {
             "type": "MCQuestion",
             "num":"26",
+            "prompt": "string manip",
+            "code": "const q26 = () => {\n    const f = (int, str) => {\n        for (let i = 0; i < str; i++) {\n            int = int.replace('a', 'ava')\n        };\n        return int;\n    };\n\n    return f('Javascript', 2)\n};",
+            "choices": [
+                "'Javavascript'",
+                "'Javavavascript'",
+                "'Javavavavavavavascript'",
+                "SyntaxError"
+            ],
+            "correctchoice": "'Javavavascript'"
+        },
+        "27" : {
+            "type": "MCQuestion",
+            "num":"27",
+            "embedded_choice": "owo",
+            "prompttail": ",,,?",
+            "code": "const q27 = () => {\n    return 'owo'.split().join('w');\n};",
+            "choices": [
+                "owow",
+                "owwwo",
+                "owwwow",
+                "TypeError"
+            ],
+            "correctchoice": "owo"
+        },
+        "28" : {
+            "type": "MCQuestion",
+            "num":"28",
             "prompt": "how bitshift?",
-            "code": "const q13 = () => {\n    return 256 << -!!{};\n};",
+            "code": "const q27 = () => {\n    return 256 << -!!{};\n};",
             "choices": [
                 "0",
                 "128",
@@ -355,13 +382,13 @@
             ],
             "correctchoice": "0"
         },
-        "27" : {
+        "29" : {
             "type": "MCQuestion",
-            "num":"27",
+            "num":"29",
             "prompt": "i got ",
             "embedded_choice": "4294967296",
             "prompttail": " problems, and bitshifting is definitely one of them.",
-            "code" : "const q = () => {\n    (1 << 30); // -> 1073741824\n    return ((1 << 30) * 2) + (1 << 31);\n};",
+            "code" : "const q29 = () => {\n    (1 << 30); // -> 1073741824\n    return ((1 << 30) * 2) + (1 << 31);\n};",
             "choices": [
                 "2147483648",
                 "3221225472",
@@ -369,6 +396,19 @@
                 "NaN"
             ],
             "correctchoice": "0"
+        },
+        "30" : {
+            "type": "MCQuestion-code",
+            "num":"30",
+            "prompt": "naming variables is hard...",
+            "code": "const q30 = () => {\n    let integer = [];\n    let arr = (integer.push(1) + integer);\n    let boolean = parseInt(arr, ++integer);\n    boolean += arr;\n\n    return boolean;\n};",
+            "choices": [
+                "'11'",
+                "'NaN11'",
+                "'NaNundefined'",
+                "'311'"
+            ],
+            "correctchoice": "'311'"
         }
 
     },

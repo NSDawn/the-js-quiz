@@ -6,3 +6,21 @@
 .mcq-button {
     margin: 0.5rem;
 }
+
+.prompt {
+    z-index: 2;
+    text-shadow: 0 2px 5px var(--rgb-black);
+    position: relative;
+}
+pre {
+    z-index: -1;
+    box-shadow: 0 0px 5px var(--rgb-black);
+    
+}
+.question-number {
+    box-shadow: 0 0px 5px 2px var(--rgb-black);
+}
+.question-number:hover {
+    box-shadow: 0 0px 5px 5px var(--rgb-black);
+}
+
