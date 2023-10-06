@@ -10,7 +10,7 @@
   color-scheme: light dark;
   color: var(--rgb-text);
   background: linear-gradient( to bottom, var(--rgb-bg) 60%, var(--rgb-black) 100%);
-
+  background-color: var(--rgb-black);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +19,7 @@
 }
 
 
-* {
+:root{
   --rgb-debug: #ff3590;
 
   --rgb-indicator: #eb4343;
